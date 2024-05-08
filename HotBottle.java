@@ -5,11 +5,15 @@ public class HotBottle extends Product {
     private int temp;
     private int volume;
 
+    public HotBottle(String name, int price) {
+        super(name, price);
+    }
 
-    public HotBottle(String name, int price, int temp, int volume) {
+    public HotBottle(String name, int price, int temp , int volume) {
         super(name, price);
         this.temp = temp;
         this.volume = volume;
+
     }
 
     public int getVolume() {
